@@ -47,7 +47,7 @@ extern std::vector<VWin32Msg> VWin32MsgStack;
 
 void VWin32MsgThread(const int &Width, const int &Height, LPCWSTR WindowTitle, LPCWSTR ClassName, HWND ParentWindow);
 
-LRESULT VWin32ProcFnc(HWND Handle, UINT MessageType, WPARAM wParameter, LPARAM lParameter);
+LRESULT CALLBACK VWin32ProcFnc(HWND Handle, UINT MessageType, WPARAM wParameter, LPARAM lParameter);
 HWND VWin32CreateWindow(const int &Width, const int &Height, LPCWSTR WindowTitle, LPCWSTR ClassName, HWND ParentWindow);
 
 bool VPeekMessage(VWin32Msg *MsgStructure);

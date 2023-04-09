@@ -220,26 +220,27 @@ void PVMainWindow::ImageOnDrag(const int &X, const int &Y)
 PVMainWindow::PVMainWindow(Core::VApplication *Parent) : VMLMainWindow(Parent)
 {
 	LoadVML(L"./mainui.xml", VML::VMLParserParseMode::FromFile);
+	auto photo_viewer_widget = operator[](L"photo-viewer-widget");
 
-	MiniSizeButton	=  operator[](L"photo-viewer-widget")[L"minisize-button"].Get<Core::VPushButton>();
-	MaxSizeButton	=	operator[](L"photo-viewer-widget")[L"maxsize-button"].Get<Core::VPushButton>();
-	CloseButton		=	  operator[](L"photo-viewer-widget")[L"close-button"].Get<Core::VPushButton>();
-	MainuiContainer = operator[](L"photo-viewer-widget")[L"main-ui"].Get();
+	MiniSizeButton	=  photo_viewer_widget[L"minisize-button"].Get<Core::VPushButton>();
+	MaxSizeButton	= photo_viewer_widget[L"maxsize-button"].Get<Core::VPushButton>();
+	CloseButton		= photo_viewer_widget[L"close-button"].Get<Core::VPushButton>();
+	MainuiContainer = photo_viewer_widget[L"main-ui"].Get();
 
-	FileOpenButton = operator[](L"photo-viewer-widget")[L"startup-ui"][L"open-file-button"].Get<Core::VPushButton>();
+	FileOpenButton = photo_viewer_widget[L"startup-ui"][L"open-file-button"].Get<Core::VPushButton>();
 
-	BlurBackgroundImage = operator[](L"photo-viewer-widget")[L"main-ui"][L"view-background"].Get<Core::VImageLabel>();
-	ViewingLabel		=		 operator[](L"photo-viewer-widget")[L"main-ui"][L"view-image"].Get<Core::VImageLabel>();
+	BlurBackgroundImage = photo_viewer_widget[L"main-ui"][L"view-background"].Get<Core::VImageLabel>();
+	ViewingLabel		=		 photo_viewer_widget[L"main-ui"][L"view-image"].Get<Core::VImageLabel>();
 
-	StartupuiContainer = operator[](L"photo-viewer-widget")[L"startup-ui"].Get();
+	StartupuiContainer = photo_viewer_widget[L"startup-ui"].Get();
 
-	TitleText = operator[](L"photo-viewer-widget")[L"title-text"].Get<Core::VTextLabel>();
+	TitleText = photo_viewer_widget[L"title-text"].Get<Core::VTextLabel>();
 
-	PercentTagText = operator[](L"photo-viewer-widget")[L"main-ui"][L"zoom-tag"].Get<Core::VTextLabel>();
+	PercentTagText = photo_viewer_widget[L"main-ui"][L"zoom-tag"].Get<Core::VTextLabel>();
 
-	ZoomUpButton   =   operator[](L"photo-viewer-widget")[L"zoom-down-button"].Get<Core::VPushButton>();
-	ZoomDownButton = operator[](L"photo-viewer-widget")[L"zoom-up-button"].Get<Core::VPushButton>();
-	OneToOneButton = operator[](L"photo-viewer-widget")[L"one-to-one-button"].Get<Core::VPushButton>();
+	ZoomUpButton   =   photo_viewer_widget[L"zoom-down-button"].Get<Core::VPushButton>();
+	ZoomDownButton = photo_viewer_widget[L"zoom-up-button"].Get<Core::VPushButton>();
+	OneToOneButton = photo_viewer_widget[L"one-to-one-button"].Get<Core::VPushButton>();
 
 	ZoomUpButton->ButtonPushed.Connect(this, &PVMainWindow::ZoomUpButtonOnClicked);
 	ZoomDownButton->ButtonPushed.Connect(this, &PVMainWindow::ZoomDownButtonOnClicked);

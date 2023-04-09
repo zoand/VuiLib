@@ -2,7 +2,8 @@
 setlocal enabledelayedexpansion
 echo Before code push, format the code files
 set DIR="%cd%"
-SET CLANG_FORMAT="G:\Program Files\LLVM\bin\clang-format"
+
+SET CLANG_FORMAT="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\Llvm\bin\clang-format.exe"
 
 SET /a index=0
 for /R %DIR% %%f in (*.h, *.c, *.hpp, *.cpp, *.cc) do (

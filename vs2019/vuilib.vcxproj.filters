@@ -198,19 +198,10 @@
     <ClInclude Include="..\include\core\control\vblurlabel.h">
       <Filter>core\control</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\core\render\vbrush.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\core\control\vcanvas.h">
       <Filter>core\control</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\core\render\vcolor.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\core\vcontrol.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\core\render\vdirectxfactory.h">
       <Filter>core\control</Filter>
     </ClInclude>
     <ClInclude Include="..\include\core\control\vdragcontrolbase.h">
@@ -228,9 +219,6 @@
     <ClInclude Include="..\include\core\control\viconbutton.h">
       <Filter>core\control</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\core\render\vimage.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\core\control\vimagelabel.h">
       <Filter>core\control</Filter>
     </ClInclude>
@@ -240,19 +228,10 @@
     <ClInclude Include="..\include\core\control\vlineeditor.h">
       <Filter>core\control</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\core\render\vpainter.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\core\render\vpainterdevice.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\core\control\vpushbutton.h">
       <Filter>core\control</Filter>
     </ClInclude>
     <ClInclude Include="..\include\core\control\vradiobutton.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\core\render\vrenderbasic.h">
       <Filter>core\control</Filter>
     </ClInclude>
     <ClInclude Include="..\include\core\control\vscrollbar.h">
@@ -273,11 +252,32 @@
     <ClInclude Include="..\include\core\control\vviewlabel.h">
       <Filter>core\control</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\core\render\vwrite.h">
-      <Filter>core\control</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\core\vbasiccore.h">
       <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vbrush.h">
+      <Filter>core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vcolor.h">
+      <Filter>core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vdirectxfactory.h">
+      <Filter>core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vimage.h">
+      <Filter>core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vpainter.h">
+      <Filter>core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vpainterdevice.h">
+      <Filter>core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vrenderbasic.h">
+      <Filter>core\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\render\vwrite.h">
+      <Filter>core\render</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -378,16 +378,7 @@
     <ClCompile Include="..\src\core\control\vblurlabel.cc">
       <Filter>core\control</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\core\render\vbrush.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\core\control\vcanvas.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\core\render\vcolor.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\core\render\vdirectxfactory.cc">
       <Filter>core\control</Filter>
     </ClCompile>
     <ClCompile Include="..\src\core\control\vdragcontrolbase.cc">
@@ -405,9 +396,6 @@
     <ClCompile Include="..\src\core\control\viconbutton.cc">
       <Filter>core\control</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\core\render\vimage.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\core\control\vimagelabel.cc">
       <Filter>core\control</Filter>
     </ClCompile>
@@ -417,19 +405,10 @@
     <ClCompile Include="..\src\core\control\vlineeditor.cc">
       <Filter>core\control</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\core\render\vpainter.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\core\render\vpainterdevice.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\core\control\vpushbutton.cc">
       <Filter>core\control</Filter>
     </ClCompile>
     <ClCompile Include="..\src\core\control\vradiobutton.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\core\render\vrenderbasic.cc">
       <Filter>core\control</Filter>
     </ClCompile>
     <ClCompile Include="..\src\core\control\vscrollbar.cc">
@@ -450,11 +429,32 @@
     <ClCompile Include="..\src\core\control\vviewlabel.cc">
       <Filter>core\control</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\core\render\vwrite.cc">
-      <Filter>core\control</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\core\vbasiccore.cc">
       <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vbrush.cc">
+      <Filter>core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vcolor.cc">
+      <Filter>core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vdirectxfactory.cc">
+      <Filter>core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vimage.cc">
+      <Filter>core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vpainter.cc">
+      <Filter>core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vpainterdevice.cc">
+      <Filter>core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vrenderbasic.cc">
+      <Filter>core\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\render\vwrite.cc">
+      <Filter>core\render</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
